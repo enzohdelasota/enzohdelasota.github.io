@@ -1,0 +1,16 @@
+@import "../../variables.scss";
+
+$height: 100vh;
+$font-color: white;
+
+
+.home {
+  background-color:$primary-color;
+  height: $height;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $font-color;
+}
