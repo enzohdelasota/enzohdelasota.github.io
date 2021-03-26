@@ -10,6 +10,8 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
 import { ExperienceSectionComponent } from './experience-section/experience-section.component';
 import { ProjectsSectionComponent } from './projects-section/projects-section.component';
 import { SkillsListComponent } from './skills-list/skills-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SkillsListComponent } from './skills-list/skills-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
