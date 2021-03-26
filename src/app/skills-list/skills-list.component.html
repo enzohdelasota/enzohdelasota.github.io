@@ -1,0 +1,11 @@
+<h3>{{title}}</h3>
+<ul>
+  <li *ngFor="let skill of skills">
+    <span>{{skill.name}}</span>
+    <ul>
+      <li *ngFor="let in of counter(skill.level); let i = index">
+        *
+      </li>
+    </ul>
+  </li>
+</ul>
