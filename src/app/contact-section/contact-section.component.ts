@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-section.component.scss']
 })
 export class ContactSectionComponent implements OnInit {
+  title = 'Contacto';
 
   constructor() { }
 

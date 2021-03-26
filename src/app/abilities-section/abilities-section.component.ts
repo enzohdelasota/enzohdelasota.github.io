@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./abilities-section.component.scss']
 })
 export class AbilitiesSectionComponent implements OnInit {
+  title = 'Habilidades';
 
   constructor() { }
 

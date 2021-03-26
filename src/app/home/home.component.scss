@@ -13,4 +13,8 @@ $font-color: white;
   align-items: center;
   flex-direction: column;
   color: $font-color;
+
+  h1 {
+    color: $font-color;
+  }
 }

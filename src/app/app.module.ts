@@ -8,6 +8,7 @@ import { ProfileSectionComponent } from './profile-section/profile-section.compo
 import { AbilitiesSectionComponent } from './abilities-section/abilities-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { ExperienceSectionComponent } from './experience-section/experience-section.component';
+import { ProjectsSectionComponent } from './projects-section/projects-section.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ExperienceSectionComponent } from './experience-section/experience-sect
     ProfileSectionComponent,
     AbilitiesSectionComponent,
     ContactSectionComponent,
-    ExperienceSectionComponent
+    ExperienceSectionComponent,
+    ProjectsSectionComponent
   ],
   imports: [
     BrowserModule,
