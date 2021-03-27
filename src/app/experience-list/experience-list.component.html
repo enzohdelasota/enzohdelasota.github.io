@@ -1,0 +1,13 @@
+<h3>{{title}}</h3>
+<ul>
+  <li *ngFor="let experience of experiences">
+    <h4>{{experience.institution}}</h4>
+    <span>{{experience.from}} - {{experience.to}}</span>
+    <h5>{{experience.position}}</h5>
+    <p>{{experience.description}}</p>
+    <span>
+      <mat-icon class="icon">place</mat-icon>
+      {{experience.place}}
+    </span>
+  </li>
+</ul>

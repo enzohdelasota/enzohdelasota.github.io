@@ -12,6 +12,7 @@ import { ProjectsSectionComponent } from './projects-section/projects-section.co
 import { SkillsListComponent } from './skills-list/skills-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { ExperienceListComponent } from './experience-list/experience-list.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MatIconModule } from '@angular/material/icon';
     ExperienceSectionComponent,
     ProjectsSectionComponent,
     SkillsListComponent,
+    ExperienceListComponent,
   ],
   imports: [
     BrowserModule,

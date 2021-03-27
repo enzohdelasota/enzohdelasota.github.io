@@ -3,7 +3,7 @@
   <li *ngFor="let skill of skills">
     <span>{{skill.name}}</span>
     <span *ngFor="let in of counter(skill.level); let i = index">
-      <mat-icon class="skill-star">star_rate</mat-icon>
+      <mat-icon class="icon">star_rate</mat-icon>
     </span>
   </li>
 </ul>
