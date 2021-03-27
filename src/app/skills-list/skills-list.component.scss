@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+
+$star-off: $color-caliz-plata;
+$list-width: 100%;
+$list-width-large: 40%;
+
+.skills-list {
+  background-color: $card-background;
+  padding: $card-padding;
+  width: $list-width;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+}
+
+.star-off {
+  color: $star-off;
+}
+
+@media screen and (min-width: 800px) {
+  .skills-list {
+    width: $list-width-large;
+  }
+}

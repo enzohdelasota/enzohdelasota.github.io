@@ -5,7 +5,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 body {
   font-family: $font-stack;
-  background-color: $background-color;
   margin: $body-margin;
 
   h1, h2, h3, h4 {
@@ -19,6 +18,7 @@ body {
     flex-direction: column;
     padding: $section-padding;
     row-gap: $section-gap;
+    background-color: $background-color;
   }
 }
 
@@ -26,3 +26,6 @@ body {
   color: $primary-color;
 }
 
+.img-icon {
+  height: 20px;
+}

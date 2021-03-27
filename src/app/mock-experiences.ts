@@ -19,7 +19,7 @@ export const EXPERIENCES: Experience[] = [
     description: '',
     place: 'El Tambo - Huancayo'
   },
-  {
+  /*{
     id: 3,
     institution: 'Anddes',
     from: 'Julio 2015',
@@ -45,5 +45,5 @@ export const EXPERIENCES: Experience[] = [
     position: 'Contrato por proyecto - Desarrollador Android',
     description: '',
     place: 'Carhuamayo - Junín'
-  },
+  },*/
 ]
