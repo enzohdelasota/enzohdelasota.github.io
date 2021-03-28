@@ -34,9 +34,15 @@ body {
   .section-light {
     background-color: $light-shades;
 
-    h2, h3 {
+    h2 {
       color: $dark-shades;
       font-size: $h2-size;
+      font-weight: $font-weight;
+    }
+
+    h3 {
+      color: $dark-shades;
+      font-size: $h3-size;
       font-weight: $font-weight;
     }
   }
@@ -44,9 +50,15 @@ body {
   .section-dark {
     background-color: white;
 
-    h2, h3 {
+    h2 {
       color: $dark-accent;
       font-size: $h2-size;
+      font-weight: $font-weight;
+    }
+
+    h3 {
+      color: $dark-accent;
+      font-size: $h3-size;
       font-weight: $font-weight;
     }
   }
@@ -55,6 +67,10 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 2vw;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-bottom: 2vw;
   }
 }
 

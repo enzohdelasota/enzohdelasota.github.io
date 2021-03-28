@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { ExperienceListComponent } from './experience-list/experience-list.component';
 import { QuoteComponent } from './quote/quote.component';
+import { PersonalInformationComponent } from './personal-information/personal-information.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { QuoteComponent } from './quote/quote.component';
     SkillsListComponent,
     ExperienceListComponent,
     QuoteComponent,
+    PersonalInformationComponent,
   ],
   imports: [
     BrowserModule,
