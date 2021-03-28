@@ -13,6 +13,7 @@ import { SkillsListComponent } from './skills-list/skills-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { ExperienceListComponent } from './experience-list/experience-list.component';
+import { QuoteComponent } from './quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ExperienceListComponent } from './experience-list/experience-list.compo
     ProjectsSectionComponent,
     SkillsListComponent,
     ExperienceListComponent,
+    QuoteComponent,
   ],
   imports: [
     BrowserModule,

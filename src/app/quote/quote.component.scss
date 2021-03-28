@@ -1,0 +1,19 @@
+@import "../../variables.scss";
+
+.quote-container {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $light-accent;
+  padding:0 10vw;
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: large;
+}
+
+.quote-author {
+  align-self: flex-end;
+}
