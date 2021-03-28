@@ -1,29 +1,73 @@
 @import "./variables.scss";
 
+//Added by Amgular Material
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+//Global styles
 body {
   font-family: $font-stack;
   margin: $body-margin;
 
   h1, h2, h3, h4 {
     font-family: $font-main;
-    color: $primary-color;
+    color: $dark-shades;
     font-weight: $font-weight;
   }
 
   .sections-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .section {
     padding: $section-padding;
-    row-gap: $section-gap;
-    background-color: $background-color;
+  }
+
+  @media screen and (min-width: $max-width-mobile) {
+    .section {
+      padding-left: $section-padding-large;
+      padding-right: $section-padding-large;
+    }
+  }
+
+  .section-light {
+    background-color: $light-shades;
+
+    h2, h3 {
+      color: $dark-shades;
+      font-size: $h2-size;
+      font-weight: $font-weight;
+    }
+  }
+
+  .section-dark {
+    background-color: white;
+
+    h2, h3 {
+      color: $dark-accent;
+      font-size: $h2-size;
+      font-weight: $font-weight;
+    }
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.footer {
+  h2 {
+    color: $light-shades;
+    font-size: $h2-size;
+    font-weight: $font-weight;
   }
 }
 
 .icon {
-  color: $primary-color;
+  color: $main-brand-color;
 }
 
 .img-icon {

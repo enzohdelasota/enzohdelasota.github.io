@@ -1,3 +1,33 @@
+@import "../../variables.scss";
+
 .experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 2vw;
+
+  h4 {
+    font-weight: bolder;
+    font-size: large;
+  }
+
+  h5 {
+    font-weight: bolder;
+    font-size:medium;
+  }
+}
+
+.experience-header {
+  padding: 1vw;
+}
+
+.experience-content {
+  padding: 1vw;
+  min-width: 60%;
+}
+
+@media screen and (min-width: $min-width-desktop) {
+  .experience {
+    flex-direction: row;
+  }
 }

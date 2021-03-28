@@ -1,26 +1,51 @@
 @import "../../variables.scss";
 
-$star-off: $color-caliz-plata;
+@mixin star-off($color, $opacity: .1) {
+  color: $color;
+  color: rgba($color, $opacity);
+}
+
 $list-width: 100%;
 $list-width-large: 40%;
 
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+}
+
 .skills-list {
-  background-color: $card-background;
-  padding: $card-padding;
-  width: $list-width;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .skill {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding: 5px;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+  padding: 0 15px 0 5px;
 }
 
 .star-off {
-  color: $star-off;
+  @include star-off($main-brand-color, .2);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $max-width-mobile) {
   .skills-list {
     width: $list-width-large;
+  }
+
+  .skills-container {
+    flex-direction: row;
   }
 }

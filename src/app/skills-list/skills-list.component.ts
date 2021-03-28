@@ -9,14 +9,16 @@ import { Skill } from '../Skill';
 })
 export class SkillsListComponent implements OnInit {
   title = 'Skills';
-  skills: Skill[] = [];
+  skills1: Skill[] = [];
+  skills2: Skill[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
-    this.skills = SKILLS;
-    console.log(this.skills);
-
+    let skills = SKILLS.sort((a, b) =>
+      (a.level < b.level) ? 1 : (a.level === b.level) ? ((a.name > b.name) ? 1 : -1) : -1);
+    this.skills1 = SKILLS.slice(0, Math.trunc(skills.length/2) + skills.length % 2);
+    this.skills2 = SKILLS.slice(Math.trunc(skills.length/2) + skills.length % 2, skills.length);
   }
 
   counter(i: number) {

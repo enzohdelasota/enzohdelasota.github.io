@@ -1,34 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-$color-azul-aciano: #6495ed;
-$color-azul-majorelle: #5564eb;
-$color-ceil: #92a1cf;
-$color-lapislazuli: #26619c;
-$color-azul-sanpatricio: #23297a;
-$color-azul-mar: #006994;
-$color-azul-zafiro: #0067a5;
-$color-zafiro: #0f52ba;
-$color-azul-han: #446ccf;
-$color-azul-ultramarino: #4166f5;
-$color-turquesa: #5dc1b9;
-$color-platino: #e5e4e2;
-$color-plata: #c0c0c0;
-$color-caliz-plata: #acacac;
+//Schema from coolors.co
+$st-patricks-blue: #392d71ff;
+$nyanza: #d4f2dbff;
+$mellow-apricot: #f4b266ff;
+$red-pigment: #ed1c24ff;
+$feldgrau: #5b6c5dff;
 
-$primary-color: $color-azul-ultramarino;
-$background-color: $color-platino;
-$secundary-color: #212121;
+//Schema from colormind.io
+$sisal: #d4d0bd;
+$gulf-stream: #71a5b0;
+$san-marino: #4554b5;
+$steel-grey: #1f1c29;
 
+//Asign schema
+$light-shades: $sisal;
+$light-accent: $gulf-stream;
+$main-brand-color: $st-patricks-blue;
+$dark-accent: $san-marino;
+$dark-shades: $steel-grey;
+
+//fonts
 $font-stack: 'Roboto';
 $font-main: 'Open Sans';
 $font-weight: 100;
+$h2-size: 3em;
 
+//dimens
 $body-margin: 0;
-$section-padding: 10vw;
-$section-gap: 5vw;
+$section-padding: 5vw;
+$section-padding-large: 15vw;
 
-$card-background: white;
-$card-padding: 5vw;
-
-$image: 'assets/motorcycle-3234599_1920.jpg';
+//media
+$max-width-mobile: 800px;
+$min-width-desktop: 1000px;
