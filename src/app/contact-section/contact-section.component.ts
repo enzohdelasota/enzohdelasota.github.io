@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Quote } from '../Quote';
+import { QUOTES } from '../quotes';
 
 @Component({
   selector: 'app-contact-section',
@@ -7,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactSectionComponent implements OnInit {
   title = 'Contacto';
+  quote?: Quote;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.quote = QUOTES[3];
   }
 
 }

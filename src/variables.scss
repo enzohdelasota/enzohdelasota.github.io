@@ -21,6 +21,8 @@ $main-brand-color: $st-patricks-blue;
 $dark-accent: $san-marino;
 $dark-shades: $steel-grey;
 
+$alternative-shades: white;
+
 //fonts
 $font-stack: 'Roboto';
 $font-main: 'Open Sans';
@@ -32,6 +34,8 @@ $h3-size: 1.7em;
 $body-margin: 0;
 $section-padding: 5vw;
 $section-padding-large: 15vw;
+$section-header-padding: 0 0 2vw 0;
+$section-header-margin: 0 0 2vw 0;
 
 //media
 $max-width-mobile: 800px;

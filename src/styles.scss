@@ -6,13 +6,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 //Global styles
 body {
-  font-family: $font-stack;
+  font-family: $font-stack, "Helvetica Neue", sans-serif;
   margin: $body-margin;
 
   h1, h2, h3, h4 {
-    font-family: $font-main;
+    font-family: $font-main, $font-stack, "Helvetica Neue", sans-serif;
     color: $dark-shades;
     font-weight: $font-weight;
+    margin: 0 0 16px;
+  }
+
+  h2 {
+    font-size: $h2-size;
+  }
+
+  h3 {
+    font-size: $h3-size;
   }
 
   .sections-container {
@@ -22,44 +31,20 @@ body {
 
   .section {
     padding: $section-padding;
+    background-color: $light-shades;
   }
 
   @media screen and (min-width: $max-width-mobile) {
     .section {
-      padding-left: $section-padding-large;
-      padding-right: $section-padding-large;
+      padding: $section-padding $section-padding-large;
     }
   }
 
-  .section-light {
-    background-color: $light-shades;
+  .section-alternative {
+    background-color: $alternative-shades;
 
-    h2 {
-      color: $dark-shades;
-      font-size: $h2-size;
-      font-weight: $font-weight;
-    }
-
-    h3 {
-      color: $dark-shades;
-      font-size: $h3-size;
-      font-weight: $font-weight;
-    }
-  }
-
-  .section-dark {
-    background-color: white;
-
-    h2 {
+    h2, h3 {
       color: $dark-accent;
-      font-size: $h2-size;
-      font-weight: $font-weight;
-    }
-
-    h3 {
-      color: $dark-accent;
-      font-size: $h3-size;
-      font-weight: $font-weight;
     }
   }
 
@@ -67,14 +52,16 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 2vw;
+    padding: $section-header-padding;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    margin-bottom: 2vw;
+    margin: $section-header-margin;
   }
 }
 
 .footer {
+  color: $light-shades;
+
   h2 {
     color: $light-shades;
     font-size: $h2-size;

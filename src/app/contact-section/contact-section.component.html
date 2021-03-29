@@ -1,12 +1,17 @@
 <div class="contact-container">
-  <h2>{{title}}</h2>
-  <div>
-    <mat-icon>alternate_email</mat-icon>
-    <span>lhuaricapcha@gmail.com</span>
+  <div class="section-header">
+    <h2>{{title}}</h2>
+    <app-quote [quote]="quote"></app-quote>
   </div>
-  <div>
-    <img class="img-icon" src="assets/LI-In-Bug.png"/>
-    <span>www.linkedin.com/in/enzohdelasota</span>
+  <div class="contact-content">
+    <div class="contact-item">
+      <mat-icon>email</mat-icon>
+      <span>lhuaricapcha@gmail.com</span>
+    </div>
+    <div class="contact-item">
+      <img class="img-icon" src="assets/LI-In-Bug.png"/>
+      <span>www.linkedin.com/in/enzohdelasota</span>
+    </div>
   </div>
 </div>
 
