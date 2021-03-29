@@ -1,0 +1,14 @@
+<div class="skill" >
+  <span>{{skill?.name}}</span>
+  <div class="level-back">
+    <div class="level" *ngFor="let in of counter(skill!!.level); let i = index"></div>
+  </div>
+  <!--div>
+    <span *ngFor="let in of counter(skill!!.level); let i = index">
+      <mat-icon class="icon">star_rate</mat-icon>
+    </span>
+    <span *ngFor="let in of counter(5 - skill!!.level); let i = index">
+      <mat-icon class="icon star-off">star_rate</mat-icon>
+    </span>
+  </div-->
+</div>

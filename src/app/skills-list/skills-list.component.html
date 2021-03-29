@@ -1,29 +1,13 @@
 <h3>{{title}}</h3>
 <div class="skills-container">
   <ul class="skills-list">
-    <li class="skill" *ngFor="let skill of skills1; let j = index">
-      <span>{{skill.name}}</span>
-      <div>
-        <span *ngFor="let in of counter(skill.level); let i = index">
-          <mat-icon class="icon">star_rate</mat-icon>
-        </span>
-        <span *ngFor="let in of counter(5 - skill.level); let i = index">
-          <mat-icon class="icon star-off">star_rate</mat-icon>
-        </span>
-      </div>
+    <li *ngFor="let skill of skills1; let j = index">
+      <app-skill [skill]="skill"></app-skill>
     </li>
   </ul>
   <ul class="skills-list">
-    <li class="skill" *ngFor="let skill of skills2; let j = index">
-      <span>{{skill.name}}</span>
-      <div>
-        <span *ngFor="let in of counter(skill.level); let i = index">
-          <mat-icon class="icon">star_rate</mat-icon>
-        </span>
-        <span *ngFor="let in of counter(5 - skill.level); let i = index">
-          <mat-icon class="icon star-off">star_rate</mat-icon>
-        </span>
-      </div>
+    <li *ngFor="let skill of skills2; let j = index">
+      <app-skill [skill]="skill"></app-skill>
     </li>
   </ul>
 </div>

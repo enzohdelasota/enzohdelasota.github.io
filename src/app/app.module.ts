@@ -15,6 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ExperienceListComponent } from './experience-list/experience-list.component';
 import { QuoteComponent } from './quote/quote.component';
 import { PersonalInformationComponent } from './personal-information/personal-information.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PersonalInformationComponent } from './personal-information/personal-in
     ExperienceListComponent,
     QuoteComponent,
     PersonalInformationComponent,
+    SkillComponent,
   ],
   imports: [
     BrowserModule,

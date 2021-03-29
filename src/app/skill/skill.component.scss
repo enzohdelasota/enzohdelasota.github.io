@@ -1,0 +1,44 @@
+@import "../../variables.scss";
+
+@mixin star-off($color, $opacity: .1) {
+  color: $color;
+  color: rgba($color, $opacity);
+}
+
+@mixin level-back($color, $opacity: .1) {
+  background-color: $color;
+  background-color: rgba($color, $opacity);
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding: 10px;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+  padding: 0 15px 0 5px;
+}
+
+.star-off {
+  @include star-off($main-brand-color, .2);
+}
+
+.level-back {
+  display: flex;
+  flex-direction: row;
+  @include level-back($main-brand-color, .2);
+  width: 150px;
+  height: 10px;
+}
+
+.level {
+  background-color: $main-brand-color;
+  width: 20%;
+  height: 100%;
+}
